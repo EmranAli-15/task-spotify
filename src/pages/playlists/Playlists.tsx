@@ -1,9 +1,16 @@
-import React from 'react';
+import useAxios from "../../hooks/useAxios";
 
 const Playlists = () => {
+
+        const songs = useAxios();
+
         return (
                 <div>
-                        <h1>This is playlists page</h1>
+                        <h1>
+                                {
+                                        songs.map(song => <p key={song.title}>{song.title}</p>)
+                                }
+                        </h1>
                 </div>
         );
 };
