@@ -1,5 +1,19 @@
 .my-dashboard{
         width: 25%;
         height: 100vh;
-        background-color: aqua;
+        background-color: rgb(103, 103, 252);
+}
+
+.active{
+        background-color: white;
+        padding: 2px;
+        color: rgb(103, 103, 252);
+        
+}
+
+li, li a{
+        list-style: none;
+        text-decoration: none;
+        margin-top: 10px;
+        color: white
 }

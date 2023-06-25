@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Dashboard></Dashboard>,
-    children:[
+    children: [
       {
         path: "/",
         element: <Home></Home>
@@ -42,6 +42,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div style={{maxWidth:'1400px', marginLeft: 'auto', marginRight: 'auto'}}>
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>,
 )
