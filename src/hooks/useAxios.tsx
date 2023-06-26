@@ -3,7 +3,8 @@ import axios from 'axios'
 const useAxios = () => {
         type dataSongs = {
                 title: string;
-                type: string
+                type: string;
+                images: { background: string }
         }[]
         const [songs, setSongs] = useState<dataSongs | []>([])
         const options = {
@@ -30,7 +31,6 @@ const useAxios = () => {
                 fetchData();
 
         }, [])
-
         return songs
 };
 

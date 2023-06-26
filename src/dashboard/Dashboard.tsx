@@ -34,13 +34,15 @@ const Dashboard = () => {
                                         </div>
                                 </div>
                         </div>
-                        <div className="d-flex gap-4">
-                                <ul className="my-dashboard d-none d-md-block list-style">
-                                        {
-                                                routeList
-                                        }
-                                </ul>
-                                <div className="md-w-75 w-100 d-block">
+                        <div className="d-flex w-100 gap-4">
+                                <div className="md-w-25 my-dashboard d-none d-md-block">
+                                        <ul className="list-style">
+                                                {
+                                                        routeList
+                                                }
+                                        </ul>
+                                </div>
+                                <div className="md-w-75 overflow-x-auto w-100">
                                         <Outlet></Outlet>
                                 </div>
                         </div>
